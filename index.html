@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="./favicon.png?v=" type="image/ico" rel="shortcut icon" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            text-align: center;
+        }
+        
+        h3,
+        h5,
+        p,
+        li {
+            padding: 10px;
+        }
+        
+        p {
+            line-height: 27px;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        a {
+            color: dodgerblue;
+        }
+        
+        .color {
+            color: darkcyan;
+        }
+        
+        .color1 {
+            color: cadetblue;
+        }
+        
+        .color2 {
+            color: #de7f0e;
+        }
+        .color3{
+            color: #157da7;
+        }
+        
+        #container {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        
+        .app {
+            padding: 20px;
+        }
+    </style>
+    <title>6city专题页2017 H6</title>
+    <script src="./libs/js/qrcode.js"></script>
+</head>
+
+<body>
+    <h3>
+        🚀 6城 H6 专题 CDN 服务 🚀
+    </h3>
+    <h5>
+        我们提供 <strong>2</strong> 种解决方案 。 异步懒加载 🚀 和 同步加载 🚅。
+    </h5>
+    <p class="color2">
+        如果希望首屏加载快 可以采用 异步懒加载, 用户浏览到哪里在去加载资源⏳。
+    </p>
+    <p class="color3">
+        如果不希望有 loading 状态, 可以采用 同步加载,但会造成首屏打开白屏状态时间长🕥,浪费带宽资源🌚
+    </p>
+    <p class="color1">
+        由于服务器 cdn 节点分布全球 🌍 唯独没有中国 🎈的节点，来自中国的访问者会有等等，敬请谅解！🤦🤦
+    </p>
+    <div id="container"></div>
+    <div class="app">
+
+        <ul class="ul">
+            <li>
+                <a class="color" href="0919/" target="_blank">新手指引 🚀 异步懒加载 >></a>
+            </li>
+            <li>
+                <a href="0919/async.html" target="_blank">新手指引 🚀 同步加载 >></a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+<script>
+    var container = document.querySelector('#container');
+    var qr = new QRCode(container, {
+        width: 200,
+        height: 200
+    });
+
+    var makeCode = function() {
+        var text = window.location.href;
+        qr.make(text);
+    };
+    makeCode();
+</script>
+
+</html>

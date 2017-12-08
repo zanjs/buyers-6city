@@ -1,0 +1,20 @@
+.right {
+  @for $i from 0 through 20 {
+    &_#{$i} {
+      right: #{$i}px;
+    }
+  }
+  @for $i from 0 through 20 {
+    &-ge_#{$i} {
+      right: -#{$i}px;
+    }
+  }
+}
+
+.bottom {
+  @for $i from 0 through 20 {
+    &_#{$i} {
+      bottom: #{$i}px;
+    }
+  }
+}

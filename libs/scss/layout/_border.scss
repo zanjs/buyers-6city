@@ -1,0 +1,112 @@
+.border {
+  &-no {
+    border: none;
+  }
+  &_999 {
+    border: 1px solid #999
+  }
+  &-ce {
+    border: 1px solid #cecece
+  }
+  &-ddd {
+    @for $i from 0 through 5 {
+      &_#{$i} {
+        border: #{$i}px solid #ddd
+      }
+    }
+  }
+  &-a {
+    border: 1px solid #aaa;
+  }
+  &-ccc {
+    &_1 {
+      border: 1px solid #ccc
+    }
+  }
+  &-e2 {
+    &_1 {
+      border: 1px solid #e2e2e2;
+    }
+  }
+  &_0079FF {
+    border: 1px solid #0079FF;
+  }
+  &-red {
+    &_1 {
+      border: 1px solid #FF4D6B;
+    }
+  }
+  &_999 {
+    border: 1px solid #999
+  }
+  &-ce {
+    border: 1px solid #cecece
+  }
+  &-ddd {
+    &_1 {
+      border: 1px solid #ddd
+    }
+    &_2 {
+      border: 2px solid #ddd
+    }
+    &_3 {
+      border: 3px solid #ddd
+    }
+  }
+  &-ccc {
+    &_1 {
+      border: 1px solid #ccc
+    }
+  }
+  &-e2 {
+    &_1 {
+      border: 1px solid #e2e2e2;
+    }
+  }
+  &-ed {
+    &_1 {
+      border: 1px solid #ededed;
+    }
+  }
+  &_0079FF {
+    border: 1px solid #0079FF;
+  }
+  &_47d8c2 {
+    border: 1px solid #47d8c2;
+    &_3 {
+      border: 3px solid #47d8c2;
+    }
+    &_4 {
+      border: 4px solid #47d8c2;
+    }
+  }
+  &_979797 {
+    border: 1px solid #979797;
+  }
+  &-e0e0e0 {
+    border: 1px solid #e0e0e0;
+  }
+  &_cd {
+    border: 1px solid #cdcdcd;
+  }
+}
+
+@import 'border-top';
+@import 'border-bottom';
+@import 'border-right';
+@import 'border-left';
+@import 'border-rpx';
+.last-border-true {
+  &.border-bottom-ddd_1 {
+    border-bottom: none;
+  }
+}
+
+.boder-end-wrap:last-child {
+  .border-bottom-ddd {
+    border-bottom: none;
+  }
+  &.border-bottom-ddd_1 {
+    border-bottom: none;
+  }
+}

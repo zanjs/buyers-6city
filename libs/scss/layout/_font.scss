@@ -1,0 +1,35 @@
+// 前缀
+// to 不包括end
+// through 包括end
+.font {
+    &_0 {
+        font-size: 0 !important;
+    }
+    @for $i from 9 to 50 {
+        &_#{$i} {
+            font-size: #{$i}px !important;
+        }
+        &-rpx {
+            &_#{$i} {
+                font-size: #{$i}rpx !important;
+            }
+        }
+    }
+    &-noraml {
+        font-style: normal !important;
+    }
+    &-weight {
+        &-normal {
+            font-weight: normal !important;
+        }
+        &_600 {
+            font-weight: 600;
+        }
+    }
+    &-family {
+        font-family:'PingFangTC-Regular',PingFangSC-Light, "Microsoft Yahei", "微软雅黑", sans-serif;
+        &-PingFangSC {
+            font-family:'PingFangTC-Regular',PingFangSC-Light, "Microsoft Yahei", "微软雅黑", sans-serif;
+        }
+    }
+}

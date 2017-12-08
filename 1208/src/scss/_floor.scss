@@ -1,0 +1,103 @@
+.app{
+  // height: 7126px;
+  width: 100%;
+  overflow: hidden;
+  background:#21051f url("../img/banner.jpg") no-repeat center top;
+}
+
+
+.banner-top{
+  height: 763px;
+}
+
+.floor{
+  position: relative;
+  margin: 0 auto;
+  img{
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  &_1{
+    height: 785px;
+    background: url("../img/1.png") no-repeat center  top;
+  }
+  &_2{
+    height: 3368px;
+    background: url("../img/2.png") no-repeat center center;
+  }
+  &_3{
+    height: 725px;
+    background: url("../img/3.png") no-repeat center center;
+  }
+  &_4{
+    height: 1174px;
+    background: url("../img/detail.png") no-repeat center center;
+  }
+}
+
+.product{
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+  text-align: center;
+  height: 360px;
+  padding-top: 218px;
+  a{
+    position: absolute;
+    display: inline-block;
+    width: 240px;
+    height: 360px;
+    
+    text-align: center;
+    &:hover{
+      background-color: #666;
+      background-color: rgba(#000000, .5);
+      img{
+        display: block;
+        width: 172px;
+      }
+      .text{
+        display: block;
+      }
+    }
+    img{
+      position: absolute;
+      display: none;
+      left: 50%;
+      margin-top: 60px;
+      margin-left: -87px;
+    }
+  }
+  .a{
+    &_1{
+      left: 8px;
+    }
+    &_2{
+      left: 340px;
+    }
+    &_3{
+      left: 675px;
+    }
+  }
+
+  .text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 245px;
+    font-size: 16px;
+    display: none;
+    .color{
+      color: #5fe8c0;
+      font-size: 20px;
+    }
+  }
+}
+
+
+.qrcode{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}

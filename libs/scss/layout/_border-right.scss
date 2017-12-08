@@ -1,0 +1,39 @@
+//  right
+.border-right {
+    border-right: 1rpx solid #ddd;
+    &-ddd {
+        border-right: 1px solid #ddd;
+    }
+    &-ddd {
+        border-right: 1px solid #ddd;
+    }
+    &-fff {
+        border-right: 1px solid #fff;
+    }
+    &-red {
+        border-right: 1px solid #FF4D6B;
+    }
+    &_777 {
+        border-right: 1px solid #777;
+    }
+    &_888 {
+        &_3 {
+            border-right: 3px solid #888;
+        }
+    }
+    &_999 {
+        border-right: 1px solid #999;
+    }
+    &_0079FF {
+        border-right: 1px solid #0079ff;
+        &_3 {
+            border-right: 3px solid #0079ff;
+        }
+    }
+    &_47d8c2 {
+        border-right: 1px solid #47d8c2;
+    }
+    &_777 {
+        border-right: 1px solid #777;
+    }
+}

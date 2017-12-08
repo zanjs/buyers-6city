@@ -1,0 +1,106 @@
+//定位位置
+$top:top!default;
+$right:right!default;
+$bottom:bottom!default;
+$left:left!default;
+//
+@for $i from 0 through 90 {
+    .#{$top} {
+        &_#{$i} {
+            top:#{$i}px
+        }
+    }
+    .#{$right} {
+        &_#{$i} {
+            right:#{$i}px
+        }
+    }
+    .#{$bottom} {
+        &_#{$i} {
+            bottom:#{$i}px
+        }
+    }
+    .#{$left} {
+        &_#{$i} {
+            left:#{$i}px
+        }
+    }
+}
+
+//负
+.left {
+    &-b {
+        &_0 {
+            left: 0%;
+        }
+        &_25 {
+            left: 25%;
+        }
+        &_50 {
+            left: 50%;
+        }
+        &_75 {
+            left: 75%;
+        }
+        &_100 {
+            left: 100%;
+        }
+    }
+    &_0 {
+        left: 0;
+    }
+    &_019 {
+        left: -19px;
+    }
+}
+
+.top {
+    &-b {
+        &_15 {
+            top: 15%;
+        }
+    }
+    &_94 {
+        top: 94px;
+    }
+    &_03 {
+        top: -3px;
+    }
+    &_04 {
+        top: -4px;
+    }
+    &_06 {
+        top: -6px;
+    }
+    &_07 {
+        top: -7px;
+    }
+    &-rpx {
+        &_46 {
+            top: 46rpx;
+        }
+        &_03 {
+            top: -3rpx;
+        }
+        &_04 {
+            top: -4rpx;
+        }
+        &_05 {
+            top: -5rpx;
+        }
+        &_010 {
+            top: -10rpx;
+        }
+        &_060 {
+            top: -60rpx;
+        }
+    }
+}
+
+.right {
+    &-rpx {
+        &_010 {
+            right: -10rpx;
+        }
+    }
+}

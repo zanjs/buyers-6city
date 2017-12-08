@@ -1,0 +1,22 @@
+// flex
+.flex {
+  &,&-box {
+    display: flex;
+  }
+}
+
+.flex {
+  &-direction {
+    &-column {
+      flex-direction: column;
+    }
+  }
+}
+
+@for $i from 1 through 11 {
+  .flex {
+    &_#{$i} {
+      flex: $i;
+    }
+  }
+}

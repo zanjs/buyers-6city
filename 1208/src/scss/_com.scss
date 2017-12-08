@@ -1,0 +1,28 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+  *zoom: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}

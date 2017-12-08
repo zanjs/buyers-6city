@@ -1,0 +1,138 @@
+page {
+    width: 100%; // height: 100%; // font-family: "PingFangSC-Light", Helvetica, "Microsoft Yahei", "微软雅黑", sans-serif;
+    @include font-hei;
+    -webkit-tap-highlight-color: transparent;
+    color: #444;
+    font-size: 14px;
+    input {
+        font-family: "PingFangSC-Light", Helvetica;
+        font-size: 14px;
+        min-height: auto;
+    }
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.overflow {
+    &-hidden {
+        overflow: hidden;
+    }
+}
+
+.upload-img {
+    position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        top: 22rpx;
+        left: 47rpx;
+        width: 2rpx;
+        height: 58rpx;
+        background: #ccc;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        top: 49rpx;
+        left: 19rpx;
+        width: 58rpx;
+        height: 2rpx;
+        background: #ccc;
+    }
+}
+
+.placeholder-reason {
+    color: #666;
+    font-size: 13px;
+    line-height: 38rpx;
+    font-family: PingFangSC-Light;
+}
+
+.placeholder-process {
+    color: #666;
+    font-size: 13px;
+    font-family: PingFangSC-Light;
+}
+
+button {
+    border-radius: 2px;
+}
+
+.move-circle {
+    transform: translateX(-50%)
+}
+
+.scale-circle {
+    animation: circle 0.3s cubic-bezier(0, .81, .84, .98) forwards;
+}
+
+@keyframes circle {
+    0% {
+        transform: scale(0)
+    }
+    80% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+.icon-reload {
+    box-shadow: 1px 1px 6px rgba(50, 50, 50, 0.2), -1px -1px 1px rgba(100, 100, 100, 0.1), 1px 1px 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.icon-reload-roate {
+    animation: roate 0.5s linear infinite;
+}
+
+@keyframes roate {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.draw-tip {
+    position: relative;
+    padding-left: 20rpx;
+}
+
+.draw-tip::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #aaa;
+    top: 8px;
+    left: 0;
+    border-radius: 50%;
+}

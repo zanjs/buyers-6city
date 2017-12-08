@@ -1,0 +1,11 @@
+.position {
+  &-relative,&-re {
+    position: relative;
+  }
+  &-absolute,&-ab {
+    position: absolute;
+  }
+  &-fixed {
+    position: fixed;
+  }
+}

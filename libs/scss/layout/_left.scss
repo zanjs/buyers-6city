@@ -1,0 +1,12 @@
+.left {
+  @for $i from 0 through 20 {
+    &_#{$i} {
+      left: #{$i}px;
+    }
+  }
+  @for $i from 0 through 20 {
+    &-ge_#{$i} {
+      left: -#{$i}px;
+    }
+  }
+}

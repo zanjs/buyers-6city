@@ -1,0 +1,17 @@
+{
+  "start": "1208",
+  "1208": {
+    "id": "app",
+    "title": "买手",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./1208/src/scss/main.scss"],
+      "js": ["./libs/js/vue", "./1208/src/js/main.js"]
+    },
+    "build": {
+      "css": "app.css",
+      "js": "app.js"
+    }
+  }
+}

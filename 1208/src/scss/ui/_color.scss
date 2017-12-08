@@ -1,0 +1,49 @@
+$colors: (
+    (key: fff, val: #fff),
+    (key: aaa, val: #aaa),
+    (key: ddd, val: #ddd),
+    (key: eee, val: #eee),
+    (key: blue, val: #68ADFA),
+    (key: ff0000, val: #ff0000),
+    (key: red, val: #FF4D6B),
+    (key: f3, val: #f3f3f3),
+    (key: f4, val: #F4F4F4),
+    (key: f6, val: #F6F6F6),
+    (key: f8, val: #f8f8f8),
+    (key: f9, val: #F9F9F9),
+    (key: fb, val: #FBFBFB),
+    (key: 8f, val: #8f8f8f),
+    (key: be, val: #bebebe),
+    (key: 000, val: #000),
+    (key: 333, val: #333),
+    (key: 444, val: #444),
+    (key: 555, val: #555),
+    (key: 666, val: #666),
+    (key: 777, val: #777),
+    (key: 888, val: #888),
+    (key: 999, val: #999),    
+    (key: 7b, val: #7b7b7b),
+    (key: 83, val: #838383),
+    (key: 95, val: #959595),
+    (key: 0079FF, val: #0079FF),
+    (key: 9f, val: #9f9f9f),
+    (key: ae, val: #aeaeae),
+    (key: ea, val: #eaeaea),
+    (key: e6, val: #e6e6e6),
+    (key: ef, val: #efefef),
+    (key: ffb900, val: #FFB900),
+    (key: rgba_000_5, val: rgba(0, 0, 0, 0.5)),
+  );
+  
+  @for $i from 1 through length($colors) {
+    $item: nth($colors, $i);
+    
+    .color_#{map-get($item, key)} {
+      color: map-get($item, val);
+    }
+  
+    .bg-color_#{map-get($item, key)} {
+       background-color: map-get($item, val);
+    }
+  
+  }
