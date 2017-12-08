@@ -1,0 +1,17 @@
+// input::focus {
+//   outline：none
+// }
+.input {
+  &-none {
+    outline: none;
+    border: none;
+  }
+}
+
+.input-box {
+  .input {
+    background-color: #FFF;
+    height: 30px;
+    line-height: 30px;
+  }
+}
