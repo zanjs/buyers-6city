@@ -31,7 +31,7 @@
     <script src="./build/js/app.js?v2"></script>
 </head>
 
-<body class="bg-color_fff">
+<body class="bg-color_fff" style="padding-top:100px;">
     <!-- login -->
     <!-- logo -->
     <div class="w1200 m-auto padding-bottom_44">
@@ -51,20 +51,28 @@
         <div class="login-form-box position-ab right_10 bottom_10">
             <form action="" method="post">
                 <div class="font_20">登陆</div>
-                <div class="h_30">
-                    <!-- <div class="error-message">
-                    都是必填项，手机或密码不正确
-                </div> -->
+                <div class="h_30 padding-y_10">
+                    <div class="h_30 line-height_30 login-error-message font_12 padding-left_10 radius_5">
+                        都是必填项，手机或密码不正确
+                    </div>
+                </div>
+                <div class="input-box margin-bottom_30">
+                    <input class="input input-none w radius_5 border_dfdfdf color_333" required="telephone" type="text" name="phone" id="input-phone" placeholder="请输入手机号">
+                    <span class="icon phone"></span>
+                </div>
+                <div class="input-box margin-bottom_30">
+                    <input class="input input-none w radius_5 border_dfdfdf" required="password" type="password" name="password" id="input-password" placeholder="请输入密码">
+                    <span class="icon lock"></span>
                 </div>
                 <div class="input-box padding-bottom_20">
-                    <input class="input input-none w color_333" type="text" name="phone" id="input-phone" placeholder="请输入手机号">
+                    <input class="w padding-y_12 font_20 radius_5 button-ui" theme="red" type="button" value="登录">
                 </div>
-                <div class="input-box padding-bottom_20">
-                    <input class="input input-none w" type="password" name="password" id="input-password" placeholder="请输入密码">
+                <div class="text-right">
+                    <a href="" class="opacity_5 color_333 text-none hover_line">忘记密码</a>
                 </div>
             </form>
-            <div class="input-box padding-bottom_20">
-                <input class="w" type="button" value="登录">
+            <div class="padding-top_60">
+                还没有账号？ <a href="" class="color_ff6d7e text-none hover_line">申请当买手</a>
             </div>
         </div>
         <!-- login form box end -->

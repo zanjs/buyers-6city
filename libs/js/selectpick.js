@@ -1,8 +1,7 @@
-// ;
 /**
  * @插件名 selectpick
- * @作用 一款美化下拉框插件
- * @修改日期 2017-12-11
+ * @作用 用Jquery开发的一款美化下拉框插件
+ * @修改日期 2016-01-28
  * @Version 1.0
  */
 ;
@@ -73,7 +72,7 @@
                });
                ul += "</ul>";
                $(".selectpick_options_" + elem_id).css({
-                  "width": settings.width,
+                  "width": settings.width + 5,
                   "left": 0,
                   "top": settings.height
                }).append(ul).show();
@@ -105,16 +104,3 @@
       });
    }
 })(jQuery, window, document);
-
-
-(function() {
-  window.onload = function() {
-
-    $("#select_1").selectpick({
-      container: '.select-box_1',
-      width: 300,
-    });
-  }
-
-})();
-

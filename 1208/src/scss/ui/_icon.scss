@@ -1,0 +1,16 @@
+.icon {
+  display: inline-block;
+  &.phone {
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-phone.png") no-repeat center center;
+  }
+  &.lock {
+    width: 30px; 
+    height: 30px;
+    background: url("../img/icon-lock.png") no-repeat center center;
+  }
+  &.success {
+    background: url("../img/success.png") no-repeat center center;
+  }
+}

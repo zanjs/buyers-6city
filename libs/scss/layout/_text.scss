@@ -1,4 +1,7 @@
 .text {
+  &-none {
+    text-decoration: none;
+  }
   &-line {
     text-decoration:underline
   }
@@ -45,5 +48,8 @@
 }
 
 .indent {
+  &_10{
+    text-indent: 10px;
+  }
   text-indent: 20rpx;
 }
