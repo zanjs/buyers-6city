@@ -48,8 +48,8 @@
                 <a href="/" class="color_ff6d7e text-none hover_line">首页></a><span class="padding-left_8">申请当买手</span>
             </div>
             <!-- bread nav end -->
-           <!-- schedule -->
-           <div class="">
+            <!-- schedule -->
+            <div class="">
                 <div class="schedule-box">
                     <ul class="schedule-ui" id="schedule-ui">
                         <li>
@@ -334,13 +334,16 @@
 <script type="text/javascript">
     (function() {
         window.onload = function() {
-            ScheduleIndex(2,100) //进度动画
+            ScheduleIndex(2, 100) //进度动画
 
             UploadImageShow(); // 图片上传
 
             $("#select_1").selectpick({
                 container: '.select-box_1',
                 width: 300,
+                onSelect: function(value, text) {
+                    alert("这是回调函数，选中的值：" + value + " \n选中的下拉框文本：" + text);
+                }
             });
 
             $("#select_2").selectpick({
