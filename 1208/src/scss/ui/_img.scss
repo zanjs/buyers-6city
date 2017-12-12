@@ -1,5 +1,29 @@
-
-.img-box{
+.img-box {
+  width: 320px;
+  height: 220px;
+  background: url("../img/icon-photo.png") no-repeat center center;
+  position: relative;
+  &_w {
     width: 320px;
-    height: 220px;
+  }
+  .remove-img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 2px;
+    top: 2px;
+    z-index: 10;
+    background: rgba(51, 51, 51, 0.7) url("../img/icon-remove.png") no-repeat center center;
+  }
+}
+
+.thumb {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  img {
+    max-width: 99%;
+    max-height: 99%;
+  }
 }

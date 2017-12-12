@@ -4,31 +4,28 @@
   font-weight: 500;
   border-radius: 5px;
   border: solid 1px #dfdfdf;
-  line-height: 32px;
+  line-height: 36px;
   text-indent: 10px;
   overflow: hidden;
   cursor: pointer;
   overflow: hidden;
   z-index: 8;
   position: relative;
+  &:hover {
+    background-color: #F5F5F5;
+    border: solid 1px #ccc;
+  }
+  &:active {
+    border: solid 1px #ff6d7e;
+  }
 }
 
 .selectpick_icon {
   float: right;
-  //   background: url(../images/icon.png) no-repeat center;
   margin-right: 5px;
   height: 30px;
   width: 9px;
   cursor: pointer;
-}
-
-.selectpick_div:hover {
-  background-color: #F5F5F5;
-  border: solid 1px #ccc;
-}
-
-.selectpick_div:active {
-  border: solid 1px #ff6d7e;
 }
 
 .selectpick_options {
@@ -38,35 +35,32 @@
   z-index: 10;
   font-size: 14px;
   display: none;
-}
-
-.selectpick_options ul {
-  list-style: none;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  z-index: 10;
-  font-size: 14px;
-}
-
-.selectpick_options ul li {
-  border-bottom: solid 1px #CFCFCF;
-  text-indent: 5px;
-  display: block;
-  font-size: 14px;
-  z-index: 10;
-  background-color: #fff;
-}
-
-.selectpick_options li:hover {
-  background-color: #ccc;
-  color: #fff;
-}
-
-.selectpick_options ul li.selectpick_options_selected {
-  background-color: #ddd;
-  color: #fff;
-  z-index: 9060;
+  ul {
+    list-style: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    font-size: 14px;
+    li {
+      border-bottom: solid 1px #CFCFCF;
+      text-indent: 5px;
+      display: block;
+      font-size: 14px;
+      z-index: 10;
+      cursor: pointer;
+      background-color: #fff;
+      &:hover {
+        background-color: #ccc;
+        color: #fff;
+      }
+      &.selectpick_options_selected {
+        background-color: #ddd;
+        color: #fff;
+        z-index: 9060;
+      }
+    }
+  }
 }
 
 .selectpick_no_select {
@@ -80,14 +74,6 @@
   opacity: 0;
 }
 
-.selectpick_options li {
-  cursor: pointer;
-}
-
-.selectpick_options li label {
-  cursor: pointer;
-}
-
 .selectpick_div_box {
   display: inline-block;
   *zoom: 1;
@@ -97,12 +83,19 @@
     content: '';
     position: absolute;
     display: inline-block;
-    top: 0;
-    right: 0;
-    width: 32px;
-    height: 32px;
+    top: 1px;
+    right: 1px;
+    width: 35px;
+    height: 36px;
     border-radius: 5px;
     z-index: 9;
     background: #bfbfbf url("../img/icon-down.png") no-repeat center center;
   }
+}
+
+
+.select-box{
+  position: relative;
+  display: inline-block;
+  top: 5px;
 }

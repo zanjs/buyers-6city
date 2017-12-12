@@ -28,8 +28,7 @@
         </script>
         <script src="https://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
     <![endif] -->
-    <script src="http://www.jq22.com/demo/jQuery-select20160814/js/jquery-1.11.3.min.js" ></script>
-    <script src="./build/js/app.js?v2" ></script>
+    <script src="./build/js/app.js?v3"></script>
 </head>
 
 <body class="bg-color_f0f0f0" style="padding-top:100px; padding-bottom:150px;">
@@ -107,7 +106,7 @@
                             *最高学历：
                         </td>
                         <td class="padding-bottom_20">
-                            <span class="select-box_1">
+                            <span class="select-box_1 select-box">
                                 <select id="select_1">
                                     <option value="1">小学</option>
                                     <option value="2">初中</option>
@@ -141,14 +140,33 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="padding-bottom_20 padding-right_10 text-right">
+                        <td class="padding-bottom_20 padding-right_10 text-right v-align_top padding-top_10">
                             *身份证照片：
                         </td>
                         <td class="padding-bottom_20">
                             <div class="clear">
-                                <div class="fl">
+                                <div class="fl file-area margin-right_15">
                                     <div class="img-box border_dfdfdf">
-
+                                        <div class="thumb"></div>
+                                        <a href="javascript:void(0);" onclick="RemoveImageShow(1)" class="remove-img radius_5"></a>
+                                    </div>
+                                    <div class="img-box_w padding-top_12">
+                                        <div class="btn-ui btn-file text-center padding-y_10 radius_5">
+                                            <span class="fileinput-new">上传正面照</span>
+                                            <input type="file" name="img1" id="" accept="image/gif,image/jpeg,image/x-png" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fl file-area">
+                                    <div class="img-box border_dfdfdf">
+                                        <div class="thumb"></div>
+                                        <a href="javascript:void(0);" onclick="RemoveImageShow(2)" class="remove-img radius_5"></a>
+                                    </div>
+                                    <div class="img-box_w padding-top_12">
+                                        <div class="btn-ui btn-file text-center padding-y_10 radius_5">
+                                            <span class="fileinput-new">上传反面照</span>
+                                            <input type="file" name="img2" id="" accept="image/gif,image/jpeg,image/x-png" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -166,9 +184,33 @@
                         <td style="padding-left:100px;" class="padding-bottom_20 padding-right_10 text-right">
                             *在线时间段（北京时间）：
                         </td>
-                        <td>
-                            <span>
-
+                        <td class="padding-bottom_20">
+                            <span class="select-box_2 select-box margin-right_10">
+                                <select id="select_2">
+                                    <option value="1">工作日和双休</option>
+                                    <option value="2">初中</option>
+                                    <option value="3">高中</option>
+                                    <option value="4">大学</option>
+                                </select>
+                            </span>
+                            <span class="select-box_3 select-box margin-right_10">
+                                <select id="select_3">
+                                    <option value="1">9：00am</option>
+                                    <option value="2">初中</option>
+                                    <option value="3">高中</option>
+                                    <option value="4">大学</option>
+                                </select>
+                            </span>
+                            <span class="h_37 line-height_20 v-align_mid margin-right_10" style="display:inline-block;">
+                                到
+                            </span>
+                            <span class="select-box_4 select-box">
+                                <select id="select_4">
+                                    <option value="1">9：00am</option>
+                                    <option value="2">初中</option>
+                                    <option value="3">高中</option>
+                                    <option value="4">大学</option>
+                                </select>
                             </span>
                         </td>
                     </tr>
@@ -187,7 +229,12 @@
                         <td class="padding-bottom_20 padding-right_10 text-right">
                             *结算账号：
                         </td>
-                        <td class="padding-bottom_20">
+                        <td class="padding-bottom_20 v-align_mid">
+                            <span class="select-box_5 select-box margin-right_10" style="top:12px;">
+                                <select id="select_5">
+                                    <option value="1">支付宝</option>
+                                </select>
+                            </span>
                             <span class="script">
                                 <input class="w-d indent_10 h_40 line-height_40 font_20 input input-none radius_5 border_dfdfdf" type="text" name="" id="">                     
                              </span>
@@ -245,7 +292,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>
+                        <td class="padding-top_60">
                             <span class="script">
                                     <button class="padding-y_10 padding-x_40 font_18 radius_5 button-ui" theme="red" disabled="disabled" type="button">提交申请</button>
                                 </span>
@@ -266,7 +313,40 @@
 </body>
 
 <script type="text/javascript">
-  
+    (function() {
+        window.onload = function() {
+
+            UploadImageShow(); // 图片上传
+
+            $("#select_1").selectpick({
+                container: '.select-box_1',
+                width: 300,
+            });
+
+            $("#select_2").selectpick({
+                container: '.select-box_2',
+                width: 300,
+            });
+
+            $("#select_3").selectpick({
+                container: '.select-box_3',
+                width: 132,
+            });
+
+            $("#select_4").selectpick({
+                container: '.select-box_4',
+                width: 132,
+            });
+
+            $("#select_5").selectpick({
+                container: '.select-box_5',
+                width: 110,
+            });
+
+
+        }
+
+    })();
 </script>
 
 </html>
