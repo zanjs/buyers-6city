@@ -119,7 +119,7 @@ function UploadImageShow() {
     var _this = $(this);
     var fr = new FileReader();
     var frOne = this.files[0]
-    if(!frOne){
+    if (!frOne) {
       return
     }
     fr.readAsDataURL(frOne);
@@ -146,8 +146,39 @@ function UploadImageShow() {
 }
 
 function RemoveImageShow(num) {
-  var vm = $(".file-area").eq(num-1)
+  var vm = $(".file-area").eq(num - 1)
   vm.find(".thumb").html("")
+}
+
+
+function ScheduleIndex(num, w) {
+  var ul = $("#schedule-ui")
+  var li = ul.find("li")
+  var goLi = li.eq(num - 1)
+  var s1 = goLi.find("span").eq(0)
+
+  var liLeft = goLi.position().left
+  var s1Left = s1.position().left
+
+  if (num > 1) {
+    startNum = num - 2
+
+    var startLi = li.eq(startNum)
+    var startLiS1 = startLi.find("span").eq(0)
+    var startLeft = startLiS1.position().left
+    $("#schedule-line").css("left", startLeft)
+
+    var sLen = num - 1
+
+    for (var i = 0; i < sLen; i++) {
+      li.eq(i).addClass("on")
+    }
+
+  }
+
+  $("#schedule-line").animate({ "left": [s1Left, 'easeInOutBack'], "width": [w, 'easeInOutBack'] }, 2000, function() {
+    goLi.addClass("on")
+  })
 }
 
 (function() {

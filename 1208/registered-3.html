@@ -44,17 +44,36 @@
 
         <div class="padding-y_30 padding-x_38" style="min-height:550px;">
             <!-- bread nav -->
-            <div class="bread padding-bottom_60 font_20">
+            <div class="bread padding-bottom_60 font_16">
                 <a href="/" class="color_ff6d7e text-none hover_line">首页></a><span class="padding-left_8">申请当买手</span>
             </div>
             <!-- bread nav end -->
             <!-- schedule -->
-            <div class="s">
-                <img src="./build/img/registered-3.png" alt="" srcset="">
+            <div class="">
+                <div class="schedule-box">
+                    <ul class="schedule-ui" id="schedule-ui">
+                        <li>
+                            <span class="s1">1</span>
+                            <span class="s2">/</span>
+                            <span class="s3">手机验证</span>
+                        </li>
+                        <li>
+                            <span class="s1">2</span>
+                            <span class="s2">/</span>
+                            <span class="s3">提交资料</span>
+                        </li>
+                        <li>
+                            <span class="s1">3</span>
+                            <span class="s2">/</span>
+                            <span class="s3">等待审核</span>
+                        </li>
+                    </ul>
+                    <div class="schedule-line" id="schedule-line"></div>
+                </div>
             </div>
             <!-- schedule end -->
             <!-- from -->
-            <div class="padding-top_60" >
+            <div class="padding-top_60">
                 <div class="text-center padding-bottom_19">
                     <img class="opacity_start_end" src="./build/img/success.png" alt="" srcset="">
                 </div>
@@ -71,6 +90,9 @@
 </body>
 
 <script type="text/javascript">
+ window.onload = function(){
+    ScheduleIndex(3,100)
+ }
 </script>
 
 </html>

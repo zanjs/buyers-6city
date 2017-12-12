@@ -7,7 +7,7 @@
     "author": "Julian",
     "load": {
       "css": ["./1208/src/scss/main.scss"],
-      "js": ["./libs/js/vue","./libs/js/jquery-1.12.4.min.js", "./1208/src/js/main.js"]
+      "js": ["./libs/js/vue","./libs/js/jquery-1.12.4.min.js","./libs/js/jquery.easing.1.3.js", "./1208/src/js/main.js"]
     },
     "build": {
       "css": "app.css",

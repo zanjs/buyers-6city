@@ -1,0 +1,50 @@
+.schedule{
+    &-box{
+        height: 46px;
+        position: relative;
+        border-bottom: 2px solid #eeeeee;
+
+        ul{
+            clear: both;
+            display: block;
+            text-align: center;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            width: 33.33333%;
+            font-size: 16px;
+            color: #333333;
+            opacity: .6;
+            &.on{
+                opacity: 1;
+            }
+            span{
+                display: inline-block;
+            }
+            .s1{
+                font-size: 30px;
+            }
+            .s2{
+                position: relative;
+                bottom: -3px;
+                font-size: 38px;
+                text-indent: -4px;
+            }
+            .s3{
+                position: relative;
+                font-weight: bold;
+                text-indent: -4px;
+            }
+
+        }
+    }
+    &-line{
+        position: absolute;
+        height: 2px;
+        min-width: 2px;
+        bottom: -2px;
+        // transition: all .3s;
+        background-color: #333333;
+    }
+}

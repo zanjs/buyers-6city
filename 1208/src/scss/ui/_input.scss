@@ -32,9 +32,10 @@ input {
   position: relative;
   .input {
     background-color: #FFF;
-    height: 42px;
-    line-height: 42px;
+    height: 38px;
+    line-height: 38px;
     text-indent: 10px;
+    font-size: 12px;
   }
   .icon {
     position: absolute;
@@ -54,7 +55,7 @@ input {
     border: 2px solid #bfbfbf;
     background-color: #d2d2d2;
     display: inline-block;
-    top: 50%;
+    top: 3px;
   }
   &:checked+label {
     position: relative;
@@ -64,16 +65,6 @@ input {
     border: 2px solid #ff6d7e;
     background-color: #ff98a4;
     display: inline-block;
-    top: 50%;
-    // &:after {
-    //   position: absolute;
-    //   content: '';
-    //   font-size: 0;
-    //   border: 5px solid rgb(4, 190, 2);
-    //   border-radius: 50%;
-    //   top: 5px;
-    //   left: 5px;
-    // }
     &.option_2{
       border-color: #6d88ff;
       background-color: #98bcff;
