@@ -62,12 +62,14 @@ input {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    border: 2px solid #ff6d7e;
-    background-color: #ff98a4;
+    border: 2px solid #6d88ff;
+    background-color: #98bcff;
     display: inline-block;
     &.option_2{
-      border-color: #6d88ff;
-      background-color: #98bcff;
+      // border-color: #6d88ff;
+      // background-color: #98bcff;
+      border-color: #ff6d7e;
+      background-color: #ff98a4;
     }
   }
   &:checked:disabled+label {
