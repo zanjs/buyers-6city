@@ -35,6 +35,9 @@
   z-index: 10;
   font-size: 12px;
   display: none;
+  max-height: 100px;
+  // overflow-x: auto;
+  overflow-x: hidden;
   ul {
     list-style: none;
     height: auto;

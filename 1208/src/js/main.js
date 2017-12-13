@@ -114,35 +114,29 @@
 
 })();
 
-function UploadImageShow() {
-  $(".btn-file input").on("change", function() {
-    var _this = $(this);
-    var fr = new FileReader();
-    var frOne = this.files[0]
-    if (!frOne) {
-      return
+function UploadImageRead(ts, cb) {
+  var _this = $(ts);
+  var fr = new FileReader();
+  var frOne = ts.files[0]
+  if (!frOne) {
+    return
+  }
+  fr.readAsDataURL(frOne);
+
+  var img = new Image();
+  var btn = _this.parent();
+  // btn.hide();
+  var upImg = btn.parents(".file-area");
+  upImg.addClass("loading");
+
+  fr.onload = function() {
+    img.src = this.result;
+    img.onload = function() {
+      upImg.find(".thumb").html(img);
+      upImg.removeClass("loading").find("img").css("opacity", 1);
     }
-    fr.readAsDataURL(frOne);
-
-    var img = new Image();
-    var btn = _this.parent();
-    // btn.hide();
-    var upImg = btn.parents(".file-area");
-    upImg.addClass("loading");
-
-    console.log(fr)
-
-    fr.onload = function() {
-      img.src = this.result;
-      img.onload = function() {
-        upImg.find(".thumb").html(img);
-
-        setTimeout(function() {
-          upImg.removeClass("loading").find("img").css("opacity", 1);
-        }, 1000);
-      }
-    }
-  });
+    cb(this.result)
+  }
 }
 
 function RemoveImageShow(num) {

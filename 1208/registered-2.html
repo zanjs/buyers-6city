@@ -19,6 +19,7 @@
             window.location.href = "./m/";
         }
     </script> -->
+    <link rel="stylesheet" href="http://manos.malihu.gr/repository/custom-scrollbar/demo/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="./build/css/app.css?v3.0">
     <!--[if lt IE 9]>
         <script type="text/javascript">
@@ -29,6 +30,7 @@
         <script src="https://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
     <![endif] -->
     <script src="./build/js/app.js?v3.1"></script>
+    <script src="http://manos.malihu.gr/repository/custom-scrollbar/demo/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
 
 <body class="bg-color_f0f0f0" style="padding-top:100px; padding-bottom:150px;">
@@ -336,7 +338,12 @@
         window.onload = function() {
             ScheduleIndex(2, 100) //进度动画
 
-            UploadImageShow(); // 图片上传
+             // 图片上传
+            $(".btn-file input").on("change", function() {
+                UploadImageRead(this, function(res) {
+                    console.log(res)
+                })
+            });
 
             $("#select_1").selectpick({
                 container: '.select-box_1',
@@ -366,6 +373,13 @@
                 width: 110,
             });
 
+
+            $.mCustomScrollbar.defaults.scrollButtons.enable = true; //enable scrolling buttons by default
+            $.mCustomScrollbar.defaults.axis = "yx"; //enable 2 axis scrollbars by default
+
+            $(".selectpick_options").mCustomScrollbar({
+                theme: "light-3"
+            });
 
         }
 
