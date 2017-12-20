@@ -20,10 +20,16 @@
 .thumb {
   text-align: center;
   position: relative;
+  height: 220px;
   top: 50%;
   transform: translateY(-50%);
   img {
+    position: relative;
     max-width: 99%;
     max-height: 99%;
+    vertical-align: middle;
+    line-height: 220px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

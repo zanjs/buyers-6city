@@ -116,6 +116,8 @@
 
 function UploadImageRead(ts, cb) {
   var _this = $(ts);
+  var p = _this.parents(".file-area")
+  p.find("a").removeClass("hide")
   var fr = new FileReader();
   var frOne = ts.files[0]
   if (!frOne) {
@@ -142,6 +144,8 @@ function UploadImageRead(ts, cb) {
 function RemoveImageShow(num) {
   var vm = $(".file-area").eq(num - 1)
   vm.find(".thumb").html("")
+  vm.find("a").addClass("hide")
+  vm.find("input").val("")
 }
 
 

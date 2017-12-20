@@ -1,5 +1,4 @@
 .selectpick_div {
-  background-color: #FFFFFF;
   font-size: 12px;
   font-weight: 500;
   border-radius: 5px;
@@ -12,7 +11,6 @@
   z-index: 8;
   position: relative;
   &:hover {
-    background-color: #F5F5F5;
     border: solid 1px #ccc;
   }
   &:active {
@@ -35,7 +33,7 @@
   z-index: 10;
   font-size: 12px;
   display: none;
-  max-height: 100px;
+  // max-height: 100px;
   // overflow-x: auto;
   overflow-x: hidden;
   ul {
@@ -91,7 +89,7 @@
     width: 35px;
     height: 36px;
     border-radius: 5px;
-    z-index: 9;
+    z-index: 0;
     background: #bfbfbf url("../img/icon-down.png") no-repeat center center;
   }
 }
