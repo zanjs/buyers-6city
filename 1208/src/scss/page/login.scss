@@ -14,3 +14,18 @@
     width: 266px;
   }
 }
+
+.logo-desc{
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  bottom: 34px;
+  padding-left: 36px;
+  font-size: 30px;
+  line-height: 50px;
+  span{
+    border-left: 1px solid #d8d8d8;
+    padding-left: 30px;
+    display: block;
+  }
+}

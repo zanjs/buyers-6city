@@ -14,7 +14,8 @@
 @import '../../../libs/scss/layout/_font.scss';
 @import '../../../libs/scss/layout/_text.scss';
 @import '../../../libs/scss/layout/_radius.scss';
-@import '../../../libs/scss/layout//_border.scss';
+@import '../../../libs/scss/layout/_border.scss';
+@import '../../../libs/scss/layout/_zindex.scss';
 
 @import 'layout';
 @import './ui/_keyframes.scss';
@@ -29,3 +30,4 @@
 @import './ui/_schedule.scss';
 
 @import './page/login.scss';
+@import './page/help.scss';

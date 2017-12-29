@@ -24,34 +24,100 @@
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
+        .six-loading{
+            position: fixed;
+            left: 50%;
+            top: 10px;
+            width: 60px;
+            height: 60px;
+            background:#fe6b77 url("./build/svg/logo-2.svg") no-repeat center center;
+            border-radius: 100%;
+            animation: spin .6s linear infinite;
+        }
+
+        .six-loading-2{
+            position: fixed;
+            left: 50%;
+            top: 120px;
+            width: 60px;
+            height: 60px;
+            background:#fe6b77 url("./build/svg/logo-2.svg") no-repeat center center;
+            border-radius: 100%;
+            animation: spin2 .6s linear infinite;
+        }
+
+        .six-loading-3{
+            position: fixed;
+            left: 10px;
+            top: 80px;
+            width: 60px;
+            height: 60px;
+            background:#fe6b77 url("./build/svg/logo-2.svg") no-repeat center center;
+            border-radius: 100%;
+            animation: spin3 1.3s linear infinite;
+        }
+        @keyframes spin3 {
+            0% {
+                background-position: center center;
+            }
+            20% {
+             background-position: -10px -10px;
+            }
+            40% {
+             background-position: center center;
+            }
+            60% {
+             background-position: 40px -10px;
+            }
+            80% {
+             background-position: 0px 10px;
+            }
+            100% {
+                background-position: center center;
+            }
+        }
+        @keyframes spin2 {
+            0% {
+                background-position: center center;
+            }
+            30% {
+             background-position: 20px 20px;
+            }
+            100% {
+                background-position: center center;
+            }
+        }
+        @keyframes spin {
+            0% {
+              transform:rotate(0deg);
+            }
+            /* 30% {
+                    transform:rotate(-180deg);
+            } */
+            100% {
+                transform:rotate(-360deg);
+            }
+        }
     </style>
 </head>
 
 <body>
+    <!-- <div class="six-loading"></div> 
+    <div class="six-loading-2"></div>  -->
+    <div class="six-loading-3"></div> 
     <div>
         <div style="padding-bottom:20px;">
             买手平台 前端页面 <a href="//git.pan.li/FE/buyers.6city.com"> 仓库地址 </a>
         </div>
         <div>
-            <a href="login.html" class="btn btn-primary">
-        登陆</a>
-            <a href="registered-1.html" class="btn btn-success">
-        注册1</a>
-            <a href="registered-2.html" class="btn btn-success">
-            注册2
-        </a>
-            <a href="registered-3.html" class="btn btn-success">
-                注册3
-            </a>
-            <a href="reset-password-1.html" class="btn btn-info">
-                    重置1
-    </a>
-            <a href="reset-password-2.html" class="btn btn-info">
-            重置2
-</a>
-            <a href="reset-password-3.html" class="btn btn-info">
-        重置3
-</a>
+            <a href="login.html" class="btn btn-primary">登陆</a>
+            <a href="registered-1.html" class="btn btn-success">注册1</a>
+            <a href="registered-2.html" class="btn btn-success">注册2</a>
+            <a href="registered-3.html" class="btn btn-success">注册3</a>
+            <a href="reset-password-1.html" class="btn btn-info">重置1</a>
+            <a href="reset-password-2.html" class="btn btn-info">重置2</a>
+            <a href="reset-password-3.html" class="btn btn-info">重置3</a>
+            <a href="help-1.html" class="btn btn-success">帮助1</a>
         </div>
     </div>
 </body>
