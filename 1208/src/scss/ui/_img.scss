@@ -17,6 +17,19 @@
   }
 }
 
+.file-area{
+  position: relative;
+  input[type="file"]{
+    position: absolute;
+    cursor: pointer;
+    height: 240px;
+    top: 36px;
+    opacity: 0;
+    direction: ltr;
+    background-color: transparent;
+  }
+}
+
 .thumb {
   text-align: center;
   position: relative;

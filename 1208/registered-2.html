@@ -172,9 +172,11 @@
                                     <div class="img-box_w padding-top_12">
                                         <div class="btn-ui btn-file text-center padding-y_10 radius_5">
                                             <span class="fileinput-new">上传正面照</span>
-                                            <input type="file" name="img1" id="" accept="image/gif,image/jpeg,image/x-png" />
                                         </div>
                                     </div>
+                                    <div class="file-btn-box">
+                                    <input type="file" name="img1" id="" accept="image/gif,image/jpeg,image/x-png" />
+                                    </div>                                 
                                 </div>
                                 <div class="fl file-area">
                                     <div class="img-box border_dfdfdf radius_5">
@@ -184,9 +186,11 @@
                                     <div class="img-box_w padding-top_12">
                                         <div class="btn-ui btn-file text-center padding-y_10 radius_5">
                                             <span class="fileinput-new">上传反面照</span>
-                                            <input type="file" name="img2" id="" accept="image/gif,image/jpeg,image/x-png" />
                                         </div>
                                     </div>
+                                    <div class="file-btn-box">
+                                    <input type="file" name="img2" id="" accept="image/gif,image/jpeg,image/x-png" />
+                                    </div>                                   
                                 </div>
                             </div>
                         </td>
@@ -337,7 +341,7 @@
             ScheduleIndex(2, 100) //进度动画
 
              // 图片上传
-            $(".btn-file input").on("change", function() {
+            $(".file-btn-box").on("change","input", function() {
                 UploadImageRead(this, function(res) {
                     console.log(res)
                 })
