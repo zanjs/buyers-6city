@@ -49,6 +49,20 @@
   }
 }
 
+.help-back-home{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  a{
+    color: #FF4D6B;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
 .help-content {
   padding: 46px 58px;
   line-height: 20px;
@@ -70,5 +84,17 @@
       border-radius: 100%;
       transform: translateY(-50%);
     }
+  }
+}
+
+
+.protocol-input-box{
+  position: relative;
+  // background: #707070;
+  input{
+    background-color: #FF4D6B;
+    vertical-align: middle;
+    top: -2px;
+    position: relative;
   }
 }
